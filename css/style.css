@@ -1,0 +1,51 @@
+body {
+  user-select: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+}
+
+.char-creating-form {
+  box-sizing: border-box;
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0, 0.25);
+}
+
+#button {
+  cursor: pointer;
+}
+
+#selected-box {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 255, 0.7);
+  background: rgba(0, 0, 255, 0.3);
+  box-sizing: border-box;
+}
+
+#result {
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.result__char {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+}
+
+.char-selected {
+  color: blue;
+  box-sizing: border-box;
+  border: 1px solid teal;
+  z-index: 999;
+}
