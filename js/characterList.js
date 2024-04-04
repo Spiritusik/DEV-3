@@ -9,6 +9,8 @@ export default class CharacterList {
       character.append(element);
       this.list.push(character);
     }
+    
+    this.list.forEach((character) => character.setPosition('absolute'));
   }
 
   getCharacter(element) {

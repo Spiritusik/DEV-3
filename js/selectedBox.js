@@ -16,7 +16,6 @@ export default class SelectedBox {
   }
 
   append(left, top) {
-    this._element.style.position = 'absolute';
     this.left = left;
     this.top = top;
     this._startLeft = left;

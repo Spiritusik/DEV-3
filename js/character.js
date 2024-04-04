@@ -13,12 +13,15 @@ export default class Character {
     this._element = element;
   }
 
-  async append(element) {
-    await element.append(this._element);
-    await this._getElementDocumentPosition();
-    this._element.style.position = 'absolute';
+  append(element) {
+    element.append(this._element);
+    this._getElementDocumentPosition();
     this._element.style.left = this.left + 'px';
     this._element.style.top = this.top + 'px';
+  }
+  
+  setPosition(position) {
+    this._element.style.position = position;
   }
 
   _getElementDocumentPosition() {

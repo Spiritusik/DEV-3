@@ -97,7 +97,7 @@ const onMouseDownForSelectedBox = (event) => {
     characterList.removeSelected();
     selectedBox.drowRect(event.pageX, event.pageY);
     const charactersInside = selectedBox.getInsideElements(characterList.list);
-    charactersInside.forEach((character) => character.makeSelected())
+    charactersInside.forEach((character) => character.makeSelected());
   }
 
   // Функція для події переміщення курсора:
