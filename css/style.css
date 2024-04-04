@@ -30,6 +30,7 @@ body {
 #result {
   margin-top: 5px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .result__char {
